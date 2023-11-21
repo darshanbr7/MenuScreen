@@ -1,0 +1,93 @@
+.itemContainer {
+  display: inline-block;
+  margin-left: 2%;
+  width: 30%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.items-main {
+  justify-content: center;
+  height: fit-content;
+  background-color: aqua;
+  border-radius: 20px;
+  margin-left: 3rem;
+  margin-top: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fooditems-name {
+  width: 80%;
+  text-align: center !important;
+  margin-left: 10%;
+  padding-top: 1rem;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+.foodItem-image {
+  margin-top: 1rem;
+  margin-left: 18%;
+  margin-bottom: 10px;
+}
+.foodItem-image img {
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
+}
+.fooditem-amount {
+  position: relative;
+  margin-top: 1rem;
+  margin-left: 6rem;
+  font-size: 16px;
+  font-weight: bold;
+  align-items: center;
+}
+.foodQuantity {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.foodQuantity .foodQuantity-decrement {
+  height: 2rem !important;
+  width: 30px !important;
+  font-size: 16px;
+  border: none;
+  margin-left: 28%;
+  border-radius: 12px;
+  color: black;
+}
+.foodQuantity .foodQuantity-increment {
+  height: 2rem !important;
+  width: 30px !important;
+  font-size: 16px;
+  border: none;
+  margin-left: 15%;
+  border-radius: 12px;
+  color: black;
+}
+.foodQuantity-increment :hover {
+  border: none;
+}
+.addtocart button {
+  margin-left: 22%;
+  width: 180px !important;
+  height: 40px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 12px;
+  font-size: 17px;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 1px;
+}
+.addtocart button:hover {
+  background-color: rgb(10, 241, 10) !important;
+  color: white;
+}
+.foodQuantity div {
+  margin-left: 10%;
+}

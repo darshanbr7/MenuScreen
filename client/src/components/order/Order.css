@@ -1,0 +1,36 @@
+.order-header {
+  margin-top: 1rem;
+  margin-left: 30%;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+.order-counter,
+.order-No {
+  display: inline-block !important;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+.order-counter {
+  margin-left: 30%;
+  margin-top: 3rem;
+}
+
+.order-No {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+.order-home {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: rgb(87, 137, 12)    ;
+}
+.order-home :hover {
+  cursor: crosshair;
+}
