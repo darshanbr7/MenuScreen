@@ -95,7 +95,7 @@
 @media (max-width: 600px) {
   .itemContainer {
     display: flex;
-    margin-left: 1%;
+    margin: 0;
     width: 100%;
   }
   .fooditems {
