@@ -17,7 +17,10 @@ const CartItems = () => {
       return { foodName, imageUrl, foodType, foodPrice, quantity, foodId: id };
     });
     axios
-      .post(`http://localhost:8008/addCart?totalPrice=${sum}`, resultData)
+      .post(
+        `https://menu-screen-server.vercel.app/addCart?totalPrice=${sum}`,
+        resultData
+      )
       .then((res) => {
         handleAddToCart([]);
         navigate("/order", {
@@ -39,7 +42,7 @@ const CartItems = () => {
           <div key={index} className="item-main">
             <h3 className="cart-itemname">{item.foodName}</h3>
             <img src={item.imageUrl} alt="Not Found" className="cart-image" />
-               <h3 className="cart-type">{item.foodType}</h3>
+            <h3 className="cart-type">{item.foodType}</h3>
             <h3 className="cart-quantity"> Quantity : {item.quantity}</h3>
             <h3 className="cart-price">Price :{item.foodPrice}</h3>
           </div>
