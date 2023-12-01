@@ -29,8 +29,21 @@
   margin-top: 1rem;
   font-size: 16px;
   letter-spacing: 1px;
-  color: rgb(87, 137, 12)    ;
+  color: rgb(87, 137, 12);
 }
 .order-home :hover {
   cursor: crosshair;
+}
+
+@media (max-width: 600px) {
+  .order-header {
+    margin-left: 5rem;
+    margin-top: 3rem;
+  }
+
+  .order-counter {
+    margin-left: 5rem;
+  }
+  .order-home {
+  }
 }

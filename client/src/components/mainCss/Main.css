@@ -91,3 +91,14 @@
 .foodQuantity div {
   margin-left: 10%;
 }
+
+@media (max-width: 600px) {
+  .itemContainer {
+    display: flex;
+    margin-left: 1%;
+    width: 100%;
+  }
+  .fooditems {
+    width: 20rem;
+  }
+}

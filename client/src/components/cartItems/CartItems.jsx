@@ -37,18 +37,20 @@ const CartItems = () => {
       <div className="cart-header">
         <h1>Total Orders</h1>
       </div>
-      {addToCart.map((item, index) => {
-        return (
-          <div key={index} className="item-main">
-            <h3 className="cart-itemname">{item.foodName}</h3>
-            <img src={item.imageUrl} alt="Not Found" className="cart-image" />
-            <h3 className="cart-type">{item.foodType}</h3>
-            <h3 className="cart-quantity"> Quantity : {item.quantity}</h3>
-            <h3 className="cart-price">Price :{item.foodPrice}</h3>
-          </div>
-        );
-      })}
-      <h3 className="cart-totalprice">Total Price : {sum}</h3>
+      <div className="main-cart">
+        {addToCart.map((item, index) => {
+          return (
+            <div key={index} className="item-main">
+              <p className="cart-itemname">{item.foodName}</p>
+              <img src={item.imageUrl} alt="Not Found" className="cart-image" />
+              <p className="cart-type">{item.foodType}</p>
+              <p className="cart-quantity"> Quantity : {item.quantity}</p>
+              <p className="cart-price">Price :{item.foodPrice}</p>
+            </div>
+          );
+        })}
+      </div>
+      <p className="cart-totalprice">Total Price : {sum}</p>
       <button
         className="cart-cancel"
         onClick={() => {

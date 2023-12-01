@@ -14,6 +14,10 @@
   justify-content: center;
   position: relative;
 }
+.item-main p {
+  font-size: 18px;
+  font-weight: bold;
+}
 
 .cart-itemname,
 .cart-image,
@@ -74,4 +78,37 @@
   width: 200px;
   letter-spacing: 1px;
   font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  .item-main {
+    width: 100%;
+    border: 1px solid red;
+    margin: 0;
+  }
+  .cart-itemname,
+  .cart-image,
+  .cart-type,
+  .cart-type,
+  .cart-quantity,
+  .cart-price {
+    width: 80%;
+  }
+  .cart-image img {
+    height: 50px;
+    width: 50px;
+  }
+  .cart-totalprice {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .cart-cancel,
+  .cart-order {
+    align-items: center !important;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    border-radius: 4px;
+    border: none;
+  }
 }

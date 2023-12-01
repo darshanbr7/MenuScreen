@@ -20,7 +20,7 @@ app.use((req, res, next) => {
 // CORS configuration
 app.use(
   cors({
-    origin: "http://localhost:3000", // Allow requests only from this origin
+    origin: "https://menu-screen.vercel.app", // Allow requests only from this origin
     methods: "OPTIONS, GET, POST, PUT, DELETE",
     credentials: true,
     allowedHeaders: ["Content-Type", "Authorization"],
