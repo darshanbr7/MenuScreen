@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Set up CORS headers for all routes
 app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "https://menu-screen.vercel.app");
+  res.header("Access-Control-Allow-Origin", "http://localhost:3000");
   res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
   res.header("Access-Control-Allow-Headers", "Content-Type, Authorization");
   next();
@@ -20,7 +20,7 @@ app.use((req, res, next) => {
 // CORS configuration
 app.use(
   cors({
-    origin: "https://menu-screen.vercel.app", // Allow requests only from this origin
+    origin: "http://localhost:3000", // Allow requests only from this origin
     methods: "OPTIONS, GET, POST, PUT, DELETE",
     credentials: true,
     allowedHeaders: ["Content-Type", "Authorization"],
