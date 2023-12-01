@@ -63,11 +63,17 @@
     flex-direction: column;
     justify-content: center;
     overflow-y: auto;
+    margin-top: 1rem;
   }
   .items {
     width: 92%;
     height: fit-content;
     margin-right: 1rem;
     margin-left: 1rem;
+    margin-top: 1rem;
+  }
+
+  .explore-items button {
+    margin-bottom: 20px;
   }
 }
